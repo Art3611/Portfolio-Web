@@ -1,80 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Art — Desarrollador Junior</title>
-  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- HEADER -->
   <header class="header">
-    <h1 class="logo">Art.dev</h1>
-    <nav>
-      <ul class="nav">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="container header-inner">
+      <h1 class="logo"></h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#stack">Tecnologías</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Sección Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <h2>Hola, soy <span>Art</span></h2>
-      <p>Desarrollador junior especializado en Java, Spring Boot, Python y React.</p>
-      <a href="#projects" class="btn">Ver mis proyectos</a>
+  <!-- HERO -->
+<section id="hero" class="hero reveal">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h2>Hola, soy <span>Artush</span></h2>
+      <p class="lead">
+        Desarrollador junior especializado en Java, Spring Boot, Python y Flask. Enfocado en las buenas prácticas y despliegues con Docker.
+      </p>
+      <a class="btn" href="#projects">Centrado en el <span class="typing"></span></a> 
     </div>
-  </section>
 
-  <!-- Sobre mí -->
-  <section id="about" class="section">
-    <h2>Sobre mí</h2>
-    <p>Me apasiona crear soluciones limpias, eficientes y visualmente atractivas. Me interesa el backend con Java y la creación de interfaces con React.</p>
-  </section>
+    <div class="hero-media">
+      <img src="assets/img/foto.jpg" alt="Foto de Artush" class="profile-photo" />
+      <div class="social-icons">
+        <a href="https://github.com/Art3611" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/artush-mkrtchyan-ghazaryan-81a9a1174/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/34600000000" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.udemy.com/user/artush-mkrtchyan/" target="_blank" title="Udemy"><i class="fa-solid fa-graduation-cap"></i></a>
+        <a href="mailto:art3611@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Habilidades -->
-  <section id="skills" class="section">
-    <h2>Habilidades</h2>
-    <ul class="skills-list">
-      <li>Java / Spring Boot</li>
-      <li>Python</li>
-      <li>HTML / CSS / JS</li>
-      <li>React</li>
-      <li>MySQL / Docker</li>
-    </ul>
-  </section>
 
-  <!-- Proyectos -->
-  <section id="projects" class="section">
+<!-- STACK TECNOLÓGICO -->
+<section id="stack" class="stack-section">
+  <div class="container">
+    <h2 class="stack-title reveal">Stack teconológico</h2>
+
+    <div class="tech-grid reveal">
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"><p>Java</p></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"><p>Spring Boot</p></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><p>Python</p></div>
+      <div class="tech-item flask"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/flask.svg"><p>Flask</p></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"><p>JavaScript</p></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"><p>HTML5</p></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"><p>CSS3</p></div>
+
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"><p>Git</p></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"><p>MySQL</p></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"><p>Docker</p></div>
+      <div class="tech-item aws"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/amazonaws.svg"><p>AWS</p></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"><p>Postman</p></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"><p>C#</p></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"><p>PHP</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROYECTOS -->
+<section id="projects" class="section projects-section">
+  <div class="container">
     <h2>Proyectos</h2>
     <div class="projects-grid">
+      
       <article class="project-card">
-        <h3>Proyecto Facturación</h3>
-        <p>App de facturación con Spring Boot y MySQL.</p>
-        <a href="https://github.com/tuusuario/proyecto-facturacion" target="_blank">Ver en GitHub</a>
+        <div class="project-image-container">
+          <img src="assets/img/facturacion.jpg" alt="" class="project-image" />
+          <div class="overlay">
+            <h3>Proyecto Facturación</h3>
+          </div>
+        </div>
+        <p>App de facturación con Spring Boot y MySQL. "En desarrollo"</p>
+        <a href="https://github.com/Art3611/proyecto-facturacion" target="_blank">Ver en GitHub</a>
       </article>
-      <article class="project-card">
-        <h3>ToDo App</h3>
-        <p>Gestor de tareas con React y JWT.</p>
-        <a href="https://github.com/tuusuario/todo" target="_blank">Ver en GitHub</a>
-      </article>
-    </div>
-  </section>
 
-  <!-- Contacto -->
-  <section id="contact" class="section">
-    <h2>Contacto</h2>
-    <p>📧 <a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/tuusuario" target="_blank">LinkedIn</a></p>
-    <p>💻 <a href="https://github.com/tuusuario" target="_blank">GitHub</a></p>
+      <article class="project-card">
+        <div class="project-image-container">
+          <img src="assets/img/bolsa-trabajo.jpg" alt="" class="project-image" />
+          <div class="overlay">
+            <h3>Bolsa de trabajo</h3>
+          </div>
+        </div>
+        <p>Página web hecha con PHP y Tailwind CSS.</p>
+        <a href="https://github.com/Art3611/todo" target="_blank">Ver en GitHub</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- CONTACTO -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p class="lead">¿Buscas un desarrollador para tu proyecto? Escríbeme.</p>
+
+      <div class="contact-container">
+        <form class="contact-form" action="#" method="POST">
+          <input type="text" placeholder="Nombre" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Mensaje" rows="5" required></textarea>
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <aside class="contact-info">
+          <h3>📍 Ubicación</h3>
+          <p>Málaga, España</p>
+          <h3>📧 Email</h3>
+          <p><a href="mailto:art3611@gmail.com">art3611@gmail.com</a></p>
+          <h3>💬 WhatsApp</h3>
+          <p><a href="https://wa.me/34622669143" target="_blank">+34 622 669 143</a></p>
+        </aside>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
-    © 2025 Art — Desarrollador Junior
+    <div class="container">© 2025 Artush Mkrtchyan Ghazaryan — Desarrollador</div>
   </footer>
 
   <script src="js/main.js"></script>
